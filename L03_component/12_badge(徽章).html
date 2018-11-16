@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <title>徽章</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--下拉菜单需要引入js-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h5>1.基本实例(.badge)</h5>
+    <!--一般用于展示新的或未读的信息条目,通过给链接,导航添加.badge来实现-->
+    <a href="#">
+        Wechat
+        <span class="badge">10</span>
+    </a>
+
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary">
+        Message
+        <span class="badge">20</span>
+    </button>
+
+    <br>
+    <br>
+    <h5>2.适配导航元素的激活状态</h5>
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home<span class="badge">10</span></a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages<span class="badge">3</span></a></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <title>路径导航</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--下拉菜单需要引入js-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h5>1.路径导航(.breadcrumb,容器使用ol,ul都可以)</h5>
+    <!--在一个带有层次的导航结构中标明当前页面的位置-->
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Data</a></li>
+    </ol>
+
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Data</a></li>
+    </ul>
+
+
+    <h5>2.路径导航(设置默认选中:.active)</h5>
+    <!--在一个带有层次的导航结构中标明当前页面的位置-->
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <!--默认就是选中状态,所以不需要用a标签来承载了-->
+        <li class="active">Data</li>
+    </ol>
+</div>
+</body>
+</html>

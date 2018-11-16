@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>下拉菜单</title>
+
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--下拉菜单需要引入js-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h5>1.基本示例</h5>
+    <!--button里的id以及ul里的aria-labelledby都不是必须的, 但是button里的data-toggle是必须的.-->
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="dropup">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            Dropup
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <h5>2.对齐(为.dropdown-menu添加.dropdown-menu-left或.dropdown-menu-right)</h5>
+    <!--仅仅添加.dropdown-menu-right只会让下拉菜单出现在右侧, 如果想要按钮也出现在右侧,可以使用 .pull-right-->
+    <div class="dropdown pull-right">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <h5>3.标题(在ul标签中添加1个.dropdown-header类的li)</h5>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">汽车</li>
+            <li><a href="#">宝马</a></li>
+            <li><a href="#">奔驰</a></li>
+            <li><a href="#">奥迪</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">电脑</li>
+            <li><a href="#">苹果</a></li>
+            <li><a href="#">戴尔</a></li>
+            <li><a href="#">联想</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <h5>4.分割线(在ul标签中添加1个class为divider的li)</h5>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">汽车</li>
+            <li><a href="#">宝马</a></li>
+            <li><a href="#">奔驰</a></li>
+            <li><a href="#">奥迪</a></li>
+            <!--role属性为separator是为了增强可读性,可以不设置-->
+            <!--<li role="separator" class="divider"></li>-->
+            <li class="divider"></li>
+            <li class="dropdown-header">电脑</li>
+            <li><a href="#">苹果</a></li>
+            <li><a href="#">戴尔</a></li>
+            <li><a href="#">联想</a></li>
+        </ul>
+    </div>
+
+
+    <br>
+    <h5>5.禁用的菜单项(在ul标签中添加1个class为divider的li)</h5>
+    <!--为下拉菜单中的 <li> 元素添加 .disabled 类-->
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">汽车</li>
+            <li><a href="#">宝马</a></li>
+            <li><a href="#">奔驰</a></li>
+            <li><a href="#">奥迪</a></li>
+            <li class="disabled"><a href="#">本田</a></li>
+            <li class="disabled"><a href="#">现代</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

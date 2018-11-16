@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>媒体对象</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h5 class="page-header">1.默认样式(.media,.media-left,.media-right,.media-object,.media-body,.media-heading)</h5>
+    <!--这是一个抽象的样式，用以构建不同类型的组件，这些组件都具有在文本内容的左或右侧对齐的图片-->
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="img/media.png" alt="media-object" style="width: 64px;height: 64px;">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p>Media heading
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="img/media.png" alt="media-object" style="width: 64px;height: 64px;">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p>Media heading
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="img/media.png" alt="media-object" style="width: 64px;height: 64px;">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p>Media heading
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+        </div>
+    </div>
+
+    <!--图片在右边-->
+    <div class="media">
+        <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p>Media heading
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+        </div>
+        <div class="media-right">
+            <a href="#">
+                <img class="media-object" src="img/media.png" alt="media-object" style="width: 64px;height: 64px;">
+            </a>
+        </div>
+    </div>
+
+
+    <h5 class="page-header">2.对齐(.media--middle,.media-bottom)</h5>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="img/media.png" alt="media-object" style="width: 64px;height: 64px;">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Top aligned media</h4>
+            <p>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+            <p>
+                Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus
+                et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left media-middle">
+            <a href="#">
+                <img class="media-object" src="img/media.png" alt="media-object" style="width: 64px;height: 64px;">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Middle aligned media</h4>
+            <p>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+            <p>
+                Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus
+                et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left media-bottom">
+            <a href="#">
+                <img class="media-object" src="img/media.png" alt="media-object" style="width: 64px;height: 64px;">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Bottom aligned media</h4>
+            <p>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+            <p>
+                Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus
+                et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+        </div>
+    </div>
+
+
+    <h5 class="page-header">3.媒体列表(.media-list)</h5>
+    <ul class="media-list">
+       <li class="media">
+           <div class="media-left">
+               <a href="#">
+                   <img class="media-object" src="img/media.png" alt="media-list" style="width: 64px;height: 64px;" />
+               </a>
+           </div>
+           <div class="media-body">
+                <h4 class="media-heading">Media Heading</h4>
+               <p>
+                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                   purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                   fringilla. Donec lacinia congue felis in faucibus.
+               </p>
+           </div>
+       </li>
+        <li class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="img/media.png" alt="media-list" style="width: 64px;height: 64px;" />
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Media Heading</h4>
+                <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                    fringilla. Donec lacinia congue felis in faucibus.
+                </p>
+            </div>
+        </li>
+        <li class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="img/media.png" alt="media-list" style="width: 64px;height: 64px;" />
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Media Heading</h4>
+                <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                    fringilla. Donec lacinia congue felis in faucibus.
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

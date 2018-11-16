@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面板</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h5 class="page-header">1.基本实例(.panel)</h5>
+    <!--默认的 .panel 组件所做的只是设置基本的边框（border）和内补（padding）来包含内容。-->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Basic panel example
+        </div>
+    </div>
+
+    <h5 class="page-header">2.带标题的面板(.panel-heading,.panel-title)</h5>
+    <!--
+       1.通过 .panel-heading 可以很简单地为面板加入一个标题容器。你也可以通过添加设置了 .panel-title 类的 <h1>-<h6> 标签，
+         添加一个预定义样式的标题。不过，<h1>-<h6> 标签的字体大小将被 .panel-heading 的样式所覆盖。
+       2.为了给链接设置合适的颜色，务必将链接放到带有 .panel-title 类的标题标签内。
+    -->
+    <!---方式1:-->
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+            This is panel body!
+        </div>
+    </div>
+
+    <!--方式2:-->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+            This is panel body!
+        </div>
+    </div>
+
+
+    <h5 class="page-header">3.带脚注的面板(.panel-footer)</h5>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            This is panel body!
+        </div>
+        <div class="panel-footer">
+            Panel footer
+        </div>
+    </div>
+
+
+    <h5 class="page-header">4.情境类(.panel-primary,.panel-success等等)</h5>
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">This is panel body!</div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">This is panel body!</div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">This is panel body!</div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">This is panel body!</div>
+    </div>
+    <div class="panel panel-warning">
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">This is panel body!</div>
+    </div>
+    <div class="panel panel-danger">
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">This is panel body!</div>
+    </div>
+
+
+    <h5 class="page-header">5.带表格的面板(.table等等)</h5>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+            <p>
+                Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum
+                nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </p>
+        </div>
+        <!-- Table -->
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>LastName</th>
+                <th>Username</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <!--如果没有 .panel-body ，面版标题会和表格连接起来，没有空隙。-->
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+
+        <!-- Table -->
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>LastName</th>
+                <th>Username</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <h5 class="page-header">6.带列表组的面版</h5>
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+            <p>
+                Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum
+                nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </p>
+        </div>
+
+        <!--列表-->
+        <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>

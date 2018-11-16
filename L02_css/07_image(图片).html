@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image图片</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+       <!--添加img-responsive之前,浏览器窗口大小改变时,图片并不等比例缩放, 添加后,会等比例缩放.-->
+       <img class="img-responsive" src="image/angel.jpeg" alt="angel" />
+
+
+       <!--img-rounded:圆角,img-circle:椭圆或圆,img-thumbnail:带边框-->
+       <!--center-block:让是设置img-responsive的图片水平居中显示-->
+       <img class="img-responsive img-rounded center-block" src="image/human.jpeg" alt="human" />
+       <img class="img-responsive img-circle center-block" src="image/human.jpeg" alt="human" />
+       <img class="img-responsive img-thumbnail center-block" src="image/human.jpeg" alt="human" />
+   </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <title>标签</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--下拉菜单需要引入js-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h5>1.基本示例(.label)</h5>
+    <p>Example heading <span class="label label-default">New</span></p>
+
+    <br>
+    <h5>2.可用的变体(.label-default,.label-primary,.label-success,.label-info,.label-warning,.label-danger)</h5>
+    <!--
+      如果你有大量的设置为 inline 属性的标签全部放在一个较窄的容器元素内，在页面上展示这些标签就会出现问题，
+      每个标签就会有自己的一个 inline-block 元素（就像图标一样）。解决的办法是为每个标签都设置为
+      display: inline-block; 属性
+    -->
+    <span class="label label-default">Default</span>
+    <span class="label label-primary">Primary</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-danger">Danger</span>
+</div>
+</body>
+</html>

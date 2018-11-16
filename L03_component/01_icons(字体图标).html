@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>图标字体</title>
+
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+   <div class="container">
+       <h5>1.如何使用</h5>
+       <!--
+        1.必须使用cdn的方式引入库;
+        2.不要和其他组件混合使用,单独用一个span标签来承载图标字体.
+        3.只对内容为空的元素起作用(图标类只能应用在不包含任何文本内容或子元素的元素上).
+        4.图标的可访问性(aria-hidden="true").
+       -->
+       <span class="glyphicon glyphicon-heart" aria-hidden="true"></span><br>
+
+       <button class="btn btn-primary btn-lg">
+           <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+       </button>
+
+       <div class="alert alert-danger" role="alert">
+           <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+           <span class="sr-only">Error:</span>
+           Enter a valid email address
+       </div>
+
+
+
+
+   </div>
+</body>
+</html>

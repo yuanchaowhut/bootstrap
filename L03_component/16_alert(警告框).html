@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>警告框</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h5 class="page-header">1.基本实例(.alert,.alert-success等)</h5>
+    <div class="alert alert-success" role="alert">success</div>
+    <div class="alert alert-info" role="alert">info</div>
+    <div class="alert alert-warning" role="alert">
+        <strong>warning</strong>
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <strong>warning</strong>
+    </div>
+
+    <h5 class="page-header">2.可关闭的警告框(.alert-dismissable)</h5>
+    <div class="alert alert-warning alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Warning!</strong> Better check yourself, you're not looking too good
+    </div>
+
+    <h5 class="page-header">3.警告框中的链接(.alert-link)</h5>
+    <!--可以为链接设置与当前警告框相符的颜色-->
+    <div class="alert alert-success" role="alert">
+        <a href="#" class="alert-link">警告框中的链接</a>
+    </div>
+    <div class="alert alert-info" role="alert">
+        <a href="#" class="alert-link">警告框中的链接</a>
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <a href="#" class="alert-link">警告框中的链接</a>
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <a href="#" class="alert-link">警告框中的链接</a>
+    </div>
+</div>
+</body>
+</html>

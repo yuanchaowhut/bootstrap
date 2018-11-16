@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>导航</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--下拉菜单需要引入js-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(function(){
+            $(".mytab li").click(function(e){
+                e.preventDefault();
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <h5>1.标签页(.nav,.nav-tabs)</h5>
+    <!--.mytab是自定义的一个class, 目的是为了通过js代码当点击某个li标签时,为对应的li添加1个active类-->
+    <ul class="nav nav-tabs mytab">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+
+    <br>
+    <h5>2.胶囊式标签页(.nav-pills)</h5>
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+    </ul>
+    <br>
+    <!--垂直排列的胶囊式标签页-->
+    <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+    </ul>
+
+    <br>
+    <h5>3.两端对齐的标签页(.nav-justified)</h5>
+    <ul class="nav nav-tabs nav-justified">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+    </ul>
+
+    <br>
+    <h5>4.两端对齐的标签页(li标签设置.disabled)</h5>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation" class="disabled"><a href="#">Home</a></li>
+    </ul>
+
+    <br>
+    <h5>5.带下拉菜单的标签页</h5>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation" class="dropdown">
+            <a role="button" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">宝马</a></li>
+                <li><a href="#">奔驰</a></li>
+                <li><a href="#">奥迪</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+    <h5>6.带下拉菜单的胶囊式标签页</h5>
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation" class="dropdown">
+            <a role="button" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">宝马</a></li>
+                <li><a href="#">奔驰</a></li>
+                <li><a href="#">奥迪</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

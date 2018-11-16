@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <title>巨幕</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--下拉菜单需要引入js-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<h5>1.基本实例(.jumbotron)</h5>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Hello, world!</h1>
+        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+            content or information.</p>
+        <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+    </div>
+</div>
+
+
+<h5>2.与浏览器同宽并且去掉圆角</h5>
+<!--
+如果需要让巨幕组件的宽度与浏览器宽度一致并且没有圆角，请把此组件放在所有 .container 元素的外面，并在组件内部添加一个 .container 元素。
+-->
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+            content or information.</p>
+        <p><a href="#" class="btn btn-primary btn-lg" role="button">Lean more</a></p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Help Tools</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+       <h5>1.情境文本颜色(.text-muted,.text-primary,.text-success,.text-info,.text-warning,.text-danger)</h5>
+       <p class="text-muted">辅助类-p标签</p>
+       <p class="text-primary">辅助类-p标签</p>
+       <p class="text-success">辅助类-p标签</p>
+       <p class="text-info">辅助类-p标签</p>
+       <p class="text-warning">辅助类-p标签</p>
+       <p class="text-danger">辅助类-p标签</p>
+       <br>
+       <a href="#" class="text-muted">辅助类-a标签</a>
+       <a href="#" class="text-primary">辅助类-a标签</a>
+       <a href="#" class="text-success">辅助类-a标签</a>
+       <a href="#" class="text-info">辅助类-a标签</a>
+       <a href="#" class="text-warning">辅助类-a标签</a>
+       <a href="#" class="text-danger">辅助类-a标签</a>
+
+       <br>
+       <h5>2.情境背景颜色(.bg-muted,.bg-primary,.bg-success,.bg-info,.bg-warning,.bg-danger)</h5>
+       <p class="bg-muted">辅助类-p标签</p>
+       <p class="bg-primary">辅助类-p标签</p>
+       <p class="bg-success">辅助类-p标签</p>
+       <p class="bg-info">辅助类-p标签</p>
+       <p class="bg-warning">辅助类-p标签</p>
+       <p class="bg-danger">辅助类-p标签</p>
+
+       <br>
+       <h5>3.关闭按钮(.close)</h5>
+           <!--
+           1.aria-label属性是给屏幕阅读器读的,当button有与之对应的label时,屏幕阅读器读的是label的内容,
+           否则读的是aria-label里的内容;
+           2.aria-hidden=true增加了图标的可管控性,当这个图标不仅仅用于装饰作用时,而是表达某些含义时,
+           屏幕阅读器就会正确识别它的含义,主要用于特殊人群;
+           -->
+       <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+       <br>
+       <h5>4.三角符号(.caret)</h5>
+       <span class="caret"></span>
+       <br>
+       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Dropup
+           <span class="caret"></span>
+       </button>
+
+
+       <br>
+       <h5>5.快速浮动(.pull-left,.pull-right)</h5>
+       <!--不能用于导航条组件中,排列导航条中的组件时可以使用这些工具类：.navbar-left 或 .navbar-right-->
+       <div class="pull-left" style="width: 100px;height: 100px; background: #f0f;">float left</div>
+       <div class="pull-right" style="width: 100px;height: 100px; background: #00f;">float left</div>
+
+       <br>
+       <h5 style="clear: both;">5.让内容块居中(.center-block)</h5>
+       <div class="center-block clearfix" style="width: 200px;height: 200px; background: #ccc;">
+           <span>hello</span>
+       </div>
+
+
+       <br>
+       <h5>6.清除浮动(.clearfix)</h5>
+       <div class="clearfix" style="width: 200px;height: 200px; background: #ccc;">
+           <span>hello</span>
+       </div>
+
+       <br>
+       <h5>7.显示或隐藏内容(.show,.hidden)</h5>
+       <!--
+           1.只对块级元素起作用
+           2..hide 类仍然可用，但是它不能对屏幕阅读器起作用，并且从 v3.0.1 版本开始就不建议使用了。请使用 .hidden 或 .sr-only
+           3..invisible 类可以被用来仅仅影响元素的可见性，也就是说，元素的 display 属性不被改变，并且这个元素仍然能够影响文档流的排布。
+       -->
+       <div class="show" style="width: 100px;height: 100px; background: #f0f;">show</div>
+       <div class="hidden" style="width: 100px;height: 100px; background: #00f;">hidden</div>
+
+       <br>
+       <h5>8.屏幕阅读器和键盘导航(.sr-only,.sr-only-focusable)</h5>
+       <!--
+         1.sr-only 和 .sr-only-focusable 联合使用的话可以在元素有焦点的时候再次显示出来（例如，使用键盘导航的用户）
+       -->
+       <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+   </div>
+</body>
+</html>

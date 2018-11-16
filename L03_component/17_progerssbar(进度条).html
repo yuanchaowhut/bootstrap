@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>进度条</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h5 class="page-header">1.基本实例(.progress,.progress-bar)</h5>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+             style="width:60%;">
+            <span class="sr-only">Complete</span>
+        </div>
+    </div>
+
+
+    <h5 class="page-header">2.带有提示标签的进度条(.progress,.progress-bar)</h5>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+             style="width:60%;">
+            <!--<span>60%</span>-->
+            60%
+        </div>
+    </div>
+
+    <div class="progress">
+        <!--在展示很低的百分比时，如果需要让文本提示能够清晰可见，可以为进度条设置 min-width 属性。-->
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+             style="min-width: 2em;">
+            0%
+        </div>
+    </div>
+
+    <div class="progress">
+        <!--在展示很低的百分比时，如果需要让文本提示能够清晰可见，可以为进度条设置 min-width 属性。-->
+        <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"
+             style="min-width: 2em; width: 2%;">
+            2%
+        </div>
+    </div>
+
+    <h5 class="page-header">3.根据情境变化效果(.progress-bar-success等)</h5>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+             aria-valuemax="100" style="width: 20%;">
+            <span>20%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+             aria-valuemax="100" style="width: 40%;">
+            <span>40%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+             aria-valuemax="100" style="width: 60%;">
+            <span>60%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+             aria-valuemax="100" style="width: 80%;">
+            <span>80%</span>
+        </div>
+    </div>
+
+    <h5 class="page-header">4.条纹效果(.progress-bar-striped)</h5>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="20"
+             aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+            <span>20%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40"
+             aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+            <span>40%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60"
+             aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            <span>60%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80"
+             aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+            <span>80%</span>
+        </div>
+    </div>
+
+
+    <h5 class="page-header">5.动画效果(为.progress-bar-striped 添加.active类)</h5>
+    <!--为 .progress-bar-striped 添加 .active 类，使其呈现出由右向左运动的动画效果。IE9 及更低版本的浏览器不支持。-->
+    <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="20"
+             aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+            <span>20%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40"
+             aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+            <span>40%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60"
+             aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            <span>60%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80"
+             aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+            <span>80%</span>
+        </div>
+    </div>
+
+    <h5 class="page-header">5.堆叠效果(多个进度条放入同一个.progress中)</h5>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 10%">
+            <span class="sr-only">10% Complete (success)</span>
+        </div>
+        <div class="progress-bar progress-bar-info" style="width: 20%">
+            <span class="sr-only">20% Complete (info)</span>
+        </div>
+        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 30%">
+            <span class="sr-only">30% Complete (warning)</span>
+        </div>
+        <div class="progress-bar progress-bar-danger" style="width: 40%">
+            <span class="sr-only">40% Complete (danger)</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

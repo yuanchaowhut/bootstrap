@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>responsive tools</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h5>1.可用的类</h5>
+    <!--拖动浏览器以改变浏览器的宽度,会发现只有平板尺寸时下面的p标签里的内容才能显示.-->
+    <!--visible-sm和visible-sm-block基本效果相同,所以建议使用后者.-->
+    <p class="visible-sm">hello</p>
+    <p class="visible-sm-block">hello block</p>
+    <p class="visible-sm-inline">hello inline</p>
+    <p class="visible-sm-inline-block">hello inline-block</p>
+
+    <!--只有平板尺寸时p标签里的内容不可见,其他尺寸均能看见,通过改变浏览器窗口宽度来验证.-->
+    <p class="hidden-sm">hello</p>
+
+    <br>
+    <h5>2.打印类(.visible-print-block,.visible-print-inline,.visible-print-inline-block,.hidden-print)</h5>
+    <!--.visible-print 类也是存在的，但是从 v3.2.0 版本开始不建议使用。它与 .visible-print-block 类大致相同，
+    除了 <table> 相关元素的特殊情况外。-->
+    <p class="visible-print-block">hello</p>
+    <p class="visible-print-inline">hello</p>
+    <p class="visible-print-inline-block">hello</p>
+
+    <p class="hidden-print">hello</p>
+    <!--当使用了上面那些打印相关的类后, 浏览器里可见的,打印时就不可见,打印时可见的,浏览器里就不可见.-->
+</div>
+</body>
+</html>

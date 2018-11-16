@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <title>分页</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--下拉菜单需要引入js-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h5>1.默认分页(.pagination)</h5>
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <br>
+    <h5>2.默认分页---禁用和激活状态(.disabled,.active)</h5>
+    <nav>
+        <ul class="pagination">
+            <li>
+                <a href="#">
+                    <span>&laquo;</span>
+                </a>
+            </li>
+            <li class="disabled"><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#">
+                    <span>&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <br>
+    <h5>3.默认分页---尺寸(.pagination-lg,.pagination-sm,.pagination-xs)</h5>
+    <nav>
+        <!--大屏幕-->
+        <ul class="pagination pagination-lg">
+            <li>
+                <a href="#">
+                    <span>&laquo;</span>
+                </a>
+            </li>
+            <li class="disabled"><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#">
+                    <span>&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--默认-->
+    <nav>
+        <ul class="pagination">
+            <li>
+                <a href="#">
+                    <span>&laquo;</span>
+                </a>
+            </li>
+            <li class="disabled"><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#">
+                    <span>&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--平板-->
+    <nav>
+        <ul class="pagination pagination-sm">
+            <li>
+                <a href="#">
+                    <span>&laquo;</span>
+                </a>
+            </li>
+            <li class="disabled"><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#">
+                    <span>&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <br>
+    <h5>4.翻页(.pager)</h5>
+    <nav aria-label="...">
+        <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <h5>4.翻页---两端对齐链接(.previous,.next)</h5>
+    <nav aria-label="...">
+        <ul class="pager">
+            <li class="previous">
+                <a href="#">
+                  <span aria-hidden="true">&larr;</span>Previous
+                </a>
+            </li>
+            <li class="next">
+                <a href="#">
+                    Next<span aria-hidden="true">&rarr;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <br>
+    <h5>5.翻页---可选的禁用状态(.disabled)</h5>
+    <nav aria-label="...">
+        <ul class="pager">
+            <li class="previous disabled">
+                <a href="#">
+                    <span>&larr;</span>Previous
+                </a>
+            </li>
+            <li class="next">
+                <a href="#">
+                    Next<span>&rarr;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>按钮组</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--下拉菜单需要引入js-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h5>1.基本示例(.btn-group)</h5>
+    <div class="btn-group" role="group" aria-label="...">
+        <button class="btn btn-default" type="button">Left</button>
+        <button class="btn btn-default" type="button">Middle</button>
+        <button class="btn btn-default" type="button">Right</button>
+    </div>
+
+    <br>
+    <h5>2.按钮工具栏(.btn-toolbar)</h5>
+    <!--将一组 <div class="btn-group"> 组合进一个 <div class="btn-toolbar"> 中就可以做成更复杂的组件-->
+    <div class="btn-toolbar" role="toolbar" aria-label="...">
+        <div class="btn-group" role="group" aria-label="...">
+            <button class="btn btn-default" type="button">Left</button>
+            <button class="btn btn-default" type="button">Middle</button>
+            <button class="btn btn-default" type="button">Right</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="...">
+            <button class="btn btn-primary" type="button">Left</button>
+            <button class="btn btn-primary" type="button">Middle</button>
+            <button class="btn btn-primary" type="button">Right</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="...">
+            <button class="btn btn-info" type="button">Left</button>
+            <button class="btn btn-info" type="button">Middle</button>
+            <button class="btn btn-info" type="button">Right</button>
+        </div>
+    </div>
+
+    <br>
+    <h5>3.尺寸(为每个.btn-group添加btn-group-*就可以批量给每个按钮设置尺寸)</h5>
+    <div class="btn-group btn-group-lg" role="group" aria-label="...">
+        <button class="btn btn-default" type="button">Left</button>
+        <button class="btn btn-default" type="button">Middle</button>
+        <button class="btn btn-default" type="button">Right</button>
+    </div>
+    <div class="btn-group btn-group" role="group" aria-label="...">
+        <button class="btn btn-default" type="button">Left</button>
+        <button class="btn btn-default" type="button">Middle</button>
+        <button class="btn btn-default" type="button">Right</button>
+    </div>
+    <div class="btn-group btn-group-sm" role="group" aria-label="...">
+        <button class="btn btn-default" type="button">Left</button>
+        <button class="btn btn-default" type="button">Middle</button>
+        <button class="btn btn-default" type="button">Right</button>
+    </div>
+    <div class="btn-group btn-group-xs" role="group" aria-label="...">
+        <button class="btn btn-default" type="button">Left</button>
+        <button class="btn btn-default" type="button">Middle</button>
+        <button class="btn btn-default" type="button">Right</button>
+    </div>
+
+    <br>
+    <h5>4.嵌套(.btn-group嵌套到.btn-group中)</h5>
+    <!--想要把下拉菜单混合到一系列按钮中，只须把 .btn-group 放入另一个 .btn-group 中。-->
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                Right
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <h5>5.垂直排列(.btn-group-vertical)</h5>
+    <!--让一组按钮垂直堆叠排列显示而不是水平排列。分列式按钮下拉菜单不支持这种方式。-->
+    <div class="btn-group-vertical" role="group" aria-label="...">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                Right
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <h5>6.两端对齐排列的按钮组(a标签)(.btn-group-vertical)</h5>
+    <!--让一组按钮拉长为相同的尺寸，填满父元素的宽度。对于按钮组中的按钮式下拉菜单也同样适用。-->
+    <!--a标签直接往btn-group里丢,如果兼容IE8则可以每个按钮1个btn-group, button标签就是这样.-->
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <a href="#" class="btn btn-default">Left</a>
+        <a href="#" class="btn btn-default">Middle</a>
+        <a href="#" class="btn btn-default">Right</a>
+    </div>
+
+    <br>
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <a href="#" class="btn btn-default">Left</a>
+        <a href="#" class="btn btn-default">Middle</a>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                Right
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <h5>7.两端对齐排列的按钮组(button标签)(.btn-group-vertical)</h5>
+    <!--让一组按钮拉长为相同的尺寸，填满父元素的宽度。对于按钮组中的按钮式下拉菜单也同样适用。-->
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div class="btn-group">
+            <button class="btn btn-default" type="button">Left</button>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-default" type="button">Middle</button>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-default" type="button">Right</button>
+        </div>
+    </div>
+
+    <br>
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div class="btn-group">
+            <button class="btn btn-default" type="button">Left</button>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-default" type="button">Middle</button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                Right
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

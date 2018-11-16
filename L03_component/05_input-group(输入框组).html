@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>输入框组</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--下拉菜单需要引入js-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h5>1.基本示例(.input-group,同一侧添加多个额外元素)</h5>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="username" aria-describedby="basic-addon1"/>
+    </div>
+    <br>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"/>
+        <span class="input-group-addon" id="basic-addon2">@example.com</span>
+    </div>
+    <br>
+    <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control" placeholder="username"
+               aria-describedby="Amount (to the nearest dollar)"/>
+        <span class="input-group-addon">.00</span>
+    </div>
+
+    <br>
+    <h5>2.尺寸(input-group-lg等)</h5>
+    <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="sizing-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+    </div>
+    <br>
+    <div class="input-group">
+        <span class="input-group-addon" id="sizing-addon2">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+    </div>
+    <br>
+    <div class="input-group input-group-sm">
+        <span class="input-group-addon" id="sizing-addon3">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+    </div>
+    <br>
+    <div class="input-group input-group-xs">
+        <span class="input-group-addon" id="sizing-addon4">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+    </div>
+
+
+    <br>
+    <h5>3.作为额外元素的多选框和单选框</h5>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" aria-label="...">
+                    <input type="checkbox" aria-label="..."/>
+                </span>
+                <input type="text" class="form-control" placeholder="username" aria-label="..."/>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon" aria-label="...">
+                    <input type="radio" aria-label="..."/>
+                </span>
+                <input type="text" class="form-control" placeholder="username" aria-label="..."/>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h5>4.作为额外元素的按钮</h5>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default">Go!</button>
+                </span>
+                <input type="text" class="form-control" placeholder="Search for...">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <h5>5.作为额外元素的下拉菜单</h5>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Car
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">宝马</a></li>
+                        <li><a href="#">奔驰</a></li>
+                        <li><a href="#">奥迪</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" placeholder="carname" aria-label="..."/>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="carname" aria-label="..."/>
+                <div class="input-group-btn">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Car
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">宝马</a></li>
+                        <li><a href="#">奔驰</a></li>
+                        <li><a href="#">奥迪</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <h5>6.作为额外元素的分裂式按钮下拉菜单</h5>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">Car</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="false" aria-expanded="false">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">宝马</a></li>
+                        <li><a href="#">奔驰</a></li>
+                        <li><a href="#">奥迪</a></li>
+                        <li class="divider" role="separator"></li>
+                        <li><a href="#">Separated</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" placeholder="carname"/>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="carname"/>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">Car</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="false" aria-expanded="false">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">宝马</a></li>
+                        <li><a href="#">奔驰</a></li>
+                        <li><a href="#">奥迪</a></li>
+                        <li class="divider" role="separator"></li>
+                        <li><a href="#">Separated</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h5>7.作为额外元素的按钮组</h5>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">btn1</button>
+                    <button type="button" class="btn btn-default">btn2</button>
+                </div>
+                <input type="text" class="form-control" placeholder="username" aria-label="..."/>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="username" aria-label="..."/>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">btn1</button>
+                    <button type="button" class="btn btn-default">btn2</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

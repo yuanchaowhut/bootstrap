@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排版</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h5>1.标题</h5>
+    <!--1.h标签-->
+    <h1>这是一个h1标签
+        <small>这是一个副标题</small>
+    </h1>
+    <h2>这是一个h2标签
+        <small>这是一个副标题</small>
+    </h2>
+    <h3>这是一个h3标签
+        <small>这是一个副标题</small>
+    </h3>
+    <h4>这是一个h4标签
+        <small>这是一个副标题</small>
+    </h4>
+    <h5>这是一个h5标签
+        <small>这是一个副标题</small>
+    </h5>
+    <h6>这是一个h6标签
+        <small>这是一个副标题</small>
+    </h6>
+
+    <br>
+    <h5>2.p标签</h5>
+    <!--2.p标签-->
+    <p>这是一个p标签<br>
+        p标签内部强制换行,不会有bootstap默认的底部边距.
+    </p>
+    <p>Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予
+        <body> 元素和所有段落元素。另外，
+    <p> （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。</p>
+    <!--突出显示-->
+    <p class="lead">通过使用类lead使段落内容突出显示</p>
+
+    <h5>3.内联文本元素(mark)</h5>
+    <!--3.内联文本元素mark-->
+    <p>You can use the mark tag to
+        <mark>highlight</mark>
+        text.
+    </p>
+
+
+    <br>
+    <h5>4.被删除的文本(del)</h5>
+    <!--4.被删除的文本-->
+    <del>This line of text is meant to be treated as deleted text.</del>
+
+    <br>
+    <br>
+    <h5>5.无用文本</h5>
+    <!--5.无用文本-->
+    <s>This line of text is meant to be treated as no longer accurate.</s>
+
+    <br>
+    <br>
+    <h5>6.插入文本(ins)</h5>
+    <!--6.插入文本-->
+    <ins>his line of text is meant to be treated as an addition to the document.</ins>
+
+    <br>
+    <br>
+    <h5>7.带下划线的文本(u)</h5>
+    <!--7.带下划线的文本-->
+    <u>This line of text will render as underlined.</u>
+
+
+    <br>
+    <br>
+    <h5>8.小号文本(small)</h5>
+    <!--8.小号文本-->
+    <small>This line of text is meant to be treated as fine print.</small>
+
+
+    <br>
+    <br>
+    <h5>9.着重(strong)</h5>
+    <!--9.着重-->
+    <strong>rendered as bold text.</strong>
+
+
+    <br>
+    <br>
+    <h5>10.斜体(em)</h5>
+    <!--10.斜体-->
+    <em>rendered as italicized text.</em>
+
+    <br>
+    <br>
+    <h5>11.对齐(text-left,text-center等)</h5>
+    <!--11.对齐-->
+    <p class="text-left">Left aligned text.</p>
+    <p class="text-center">Center aligned text.</p>
+    <p class="text-right">Right aligned text.</p>
+    <p class="text-justify">Justified text.</p>
+    <p class="text-nowrap">No wrap text.</p>
+
+
+    <br>
+    <br>
+    <h5>12.大小写(text-lowercase,text-uppercase,text-captialize)</h5>
+    <!--12.大小写-->
+    <p class="text-lowercase">Lowercased text.</p>
+    <p class="text-uppercase">Uppercased text.</p>
+    <!--首字母大写-->
+    <p class="text-capitalize">Capitalized text.</p>
+
+
+    <br>
+    <br>
+    <h5>13.缩略语(abbr)</h5>
+    <!--13.1.基本缩略语(attribute->attr)-->
+    <p>An abbreviation of the word attribute is<abbr title="attribute">attr</abbr></p>
+    <!--13.2.首字母缩略语(HyperText Markup Language->HTML)-->
+    <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+
+
+    <br>
+    <br>
+    <h5>14.地址(address)</h5>
+    <address>
+        <strong>Twitter, Inc.</strong><br>
+        1355 Market Street, Suite 900<br>
+        San Francisco, CA 94103<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+    </address>
+
+    <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:#">first.last@example.com</a>
+    </address>
+
+
+    <br>
+    <br>
+    <h5>15.引用(blockquote)</h5>
+    <blockquote>
+        <!--直接引用放到p标签里-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <!--添加 <footer> 用于标明引用来源,来源的名称可以包裹进 <cite>标签中-->
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+
+    <!--引用右对齐效果(blockquote-reverse)-->
+    <blockquote class="blockquote-reverse">
+        <!--直接引用放到p标签里-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <!--添加 <footer> 用于标明引用来源,来源的名称可以包裹进 <cite>标签中-->
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+
+
+    <br>
+    <br>
+    <h5>16.列表(ul,ol li等)</h5>
+    <h6>16.1无序列表</h6>
+    <ul>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+
+    <h6>16.2有序列表</h6>
+    <ol>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ol>
+
+    <h6>16.3无样式列表</h6>
+    <ul class="list-unstyled">
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+
+    <h6>16.4内联列表</h6>
+    <ul class="list-inline">
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+
+    <h6>16.5带有描述的短语列表</h6>
+    <dl>
+        <dt>Description lists</dt>
+        <dd>A description list is perfect for defining terms.</dd>
+        <dt>Euismod</dt>
+        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+            Donec id elit non mi porta gravida at eget metus.</dd>
+        <dt>Malesuada porta</dt>
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+    </dl>
+
+    <h6>16.6带有描述的短语列表(水平)</h6>
+    <dl class="dl-horizontal">
+        <dt>Description lists</dt>
+        <dd>A description list is perfect for defining terms.</dd>
+        <dt>Euismod</dt>
+        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+            Donec id elit non mi porta gravida at eget metus.</dd>
+        <dt>Malesuada porta</dt>
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+    </dl>
+</div>
+</body>
+</html>
